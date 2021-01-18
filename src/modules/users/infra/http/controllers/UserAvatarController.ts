@@ -12,7 +12,6 @@ export default class UsersController {
       avatarFileName: request.file.filename
     });
 
-    // @ts-expect-error
     delete user.password;
 
     return response.json(user);
